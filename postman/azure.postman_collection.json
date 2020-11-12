@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "8645437e-b731-4277-a39b-4320aaac0fba",
+		"name": "azure",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://awsprojectfibonacci.azurewebsites.net/api/Fibonacci",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nth\":1000000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://awsprojectfibonacci.azurewebsites.net/api/Fibonacci",
+					"protocol": "https",
+					"host": [
+						"awsprojectfibonacci",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"Fibonacci"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
