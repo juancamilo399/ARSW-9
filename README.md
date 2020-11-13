@@ -72,10 +72,60 @@ Podemos ver que en el primer escenario todas las peticiones fueron exitosas mien
 **Preguntas**
 
 * ¿Qué es un Azure Function?
+
+Azure Functions es una experiencia de procesamiento bajo demanda impulsada por eventos que amplía la plataforma de aplicaciones de Azure existente con capacidades para implementar código desencadenado por eventos que ocurren en Azure o en servicios de terceros, así como en sistemas locales. 
+
 * ¿Qué es serverless?
+
+La computación sin servidor es un modelo de ejecución de computación en la nube en el que el proveedor de la nube ejecuta el servidor y administra dinámicamente la asignación de recursos de la máquina.
+
 * ¿Qué es el runtime y que implica seleccionarlo al momento de crear el Function App?
+
+Azure Functions Runtime proporciona una forma de experimentar Azure Functions antes de comprometerse con la nube. El tiempo de ejecución abre nuevas opciones, como el uso de la potencia de cálculo de repuesto de las computadoras locales para ejecutar procesos por lotes durante la noche. También permite usar  dispositivos dentro de la organización para enviar datos condicionalmente a otros sistemas, tanto en las instalaciones como en la nube.
+La selección del runtime permite que los activos de código que se crean se puedan llevar a la nube cuando se realice la migración.
+
+
 * ¿Por qué es necesario crear un Storage Account de la mano de un Function App?
+
+Es necesario ya que Azure Functions se basa en Azure Storage para operaciones como la administración de desencadenadores y el registro de ejecuciones de funciones.
+
 * ¿Cuáles son los tipos de planes para un Function App?, ¿En qué se diferencias?, mencione ventajas y desventajas de cada uno de ellos.
+
+**Plan de consumo
+
+Este plan permite que las instancias del host de Azure Functions se agregan y quitan dinámicamente según la cantidad de eventos entrantes. 
+El plan de consumo es el plan de alojamiento predeterminado y ofrece los siguientes beneficios:
+
+ * Solo se paga solo cuando las funciones se estén ejecutando
+ * Se escala automáticamente, incluso durante períodos de alta carga
+ 
+**Plan premium
+
+Este plan permite que las instancias del host de Azure Functions se agreguen y eliminen en función del número de eventos entrantes, al igual que el plan de consumo.
+El plan premium tiene los siguientes beneficios:
+
+  * Instancias perpetuamente calientes para evitar cualquier arranque en frío
+  * Conectividad de red virtual
+  * Duración de ejecución ilimitada (60 minutos garantizados)
+  * Tamaños de instancia premium (instancias de un núcleo, dos núcleos y cuatro núcleos)
+  * Precios más predecibles
+  * Asignación de aplicaciones de alta densidad para planes con aplicaciones de múltiples funciones
+ 
+**Plan dedicado (servicio de aplicaciones)
+
+Permite que las aplicaciones de función también puedan ejecutarse en las mismas máquinas virtuales dedicadas que otras aplicaciones de App Service (SKU básicas, estándar, premium y aisladas).
+
+ * Posee los siguientes beneficios: 
+ * Permite escalar horizontalmente agregando más instancias de VM. 
+ * Es posible habilitar la escala automática.
+
 * ¿Por qué la memoization falla o no funciona de forma correcta?
+
+Ocurren problemas en la recursión con números muy grandes. De esta manera , sucede un  desbordamiento de la pila que causa que se agote el espacio de memoria de la misma.
+
 * ¿Cómo funciona el sistema de facturación de las Function App?
+
+El plan de consumo de Azure Functions se factura en función del consumo de recursos y las ejecuciones por segundo. Los precios del plan de consumo incluyen una concesión gratuita mensual de 1 millones de solicitudes y 400.000 GB-segundos de consumo de recursos por suscripción en el modelo de precios de pago por uso, para todas las aplicaciones de funciones de esa suscripción.
+El plan Azure Functions Premium proporciona un rendimiento mejorado y se factura por segundo en función del número de vCPU/s y de GB/s que consuman sus funciones premium. Los clientes también pueden ejecutar Functions dentro de su plan de App Service a las tarifas normales del plan de App Service.
+
 * Informe
