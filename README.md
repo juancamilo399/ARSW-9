@@ -117,9 +117,9 @@ El plan premium tiene los siguientes beneficios:
 
    Posee los siguientes beneficios: 
    
-   -Permite escalar horizontalmente agregando más instancias de VM. 
+   * Permite escalar horizontalmente agregando más instancias de VM. 
    
-   -Es posible habilitar la escala automática.
+   * Es posible habilitar la escala automática.
 
 * ¿Por qué la memoization falla o no funciona de forma correcta?
 
