@@ -116,9 +116,8 @@ El plan premium tiene los siguientes beneficios:
    Permite que las aplicaciones de función también puedan ejecutarse en las mismas máquinas virtuales dedicadas que otras aplicaciones de App Service (SKU básicas, estándar,        premium y aisladas).
 
    Posee los siguientes beneficios: 
-         * Permite escalar horizontalmente agregando más instancias de VM. 
-         * Es posible habilitar la escala automática.
-
+   -Permite escalar horizontalmente agregando más instancias de VM. 
+   -Es posible habilitar la escala automática.
 
 * ¿Por qué la memoization falla o no funciona de forma correcta?
 
