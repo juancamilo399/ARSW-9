@@ -104,20 +104,21 @@ El plan de consumo es el plan de alojamiento predeterminado y ofrece los siguien
 Este plan permite que las instancias del host de Azure Functions se agreguen y eliminen en función del número de eventos entrantes, al igual que el plan de consumo.
 El plan premium tiene los siguientes beneficios:
 
-    * Instancias perpetuamente calientes para evitar cualquier arranque en frío
-    * Conectividad de red virtual
-    * Duración de ejecución ilimitada (60 minutos garantizados)
-    * Tamaños de instancia premium (instancias de un núcleo, dos núcleos y cuatro núcleos)
-    * Precios más predecibles
-    * Asignación de aplicaciones de alta densidad para planes con aplicaciones de múltiples funciones
+   * Instancias perpetuamente calientes para evitar cualquier arranque en frío
+   * Conectividad de red virtual
+   * Duración de ejecución ilimitada (60 minutos garantizados)
+   * Tamaños de instancia premium (instancias de un núcleo, dos núcleos y cuatro núcleos)
+   * Precios más predecibles
+   * Asignación de aplicaciones de alta densidad para planes con aplicaciones de múltiples funciones
  
 **Plan dedicado**
 
-Permite que las aplicaciones de función también puedan ejecutarse en las mismas máquinas virtuales dedicadas que otras aplicaciones de App Service (SKU básicas, estándar, premium y aisladas).
+   Permite que las aplicaciones de función también puedan ejecutarse en las mismas máquinas virtuales dedicadas que otras aplicaciones de App Service (SKU básicas, estándar,        premium y aisladas).
 
-   * Posee los siguientes beneficios: 
-   * Permite escalar horizontalmente agregando más instancias de VM. 
-   * Es posible habilitar la escala automática.
+   Posee los siguientes beneficios: 
+         * Permite escalar horizontalmente agregando más instancias de VM. 
+         * Es posible habilitar la escala automática.
+
 
 * ¿Por qué la memoization falla o no funciona de forma correcta?
 
