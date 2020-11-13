@@ -37,7 +37,37 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 
 5. Modifique la coleción de POSTMAN con NEWMAN de tal forma que pueda enviar 10 peticiones concurrentes. Verifique los resultados y presente un informe.
 
+![](images/itera.png)
+
+
+![](images/metricas1.png)
+
+Podemos ver que todas las peticiones tuvieron un resultado exitoso.
+
+### Conclusiones
+
+ * Todas las peticiones fueron respondidas satisfactoriamente.
+ * Al desplegar esta solucion utilizando un modelo serverless se obtuvieron resultados satisfactorios esto a pesar de eser una solucion ineficiente, demostrando la efectividad de una solucion serverless usando Azure Functions.
+
+
 6. Cree una nueva Function que resuleva el problema de Fibonacci pero esta vez utilice un enfoque recursivo con memoization. Pruebe la función varias veces, después no haga nada por al menos 5 minutos. Pruebe la función de nuevo con los valores anteriores. ¿Cuál es el comportamiento?.
+
+Se probaron dos escenarios, en el primero se calculó el 1000 nesimo numero y en el segundo el 10000 nesimo.
+
+#### Primer escenario
+
+![](images/memo1.png)
+
+![](images/metricas2.png)
+
+#### Segundo escenario
+
+![](images/memo2.png)
+
+![](images/metricas3.png)
+
+Podemos ver que en el primer escenario todas las peticiones fueron exitosas mientras que en el segundo escenario todas las peticiones fallaron debido a los limites de la recursion. Ademas, con este nuevo enforque los tiempos de respuesta reducieron bastante.
+
 
 **Preguntas**
 
